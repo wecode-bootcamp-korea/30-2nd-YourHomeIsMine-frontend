@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "name": "주방",
+      "images": "https://github.com/tanonkim/yhim/blob/master/1.png?raw=true"
+    },
+    {
+      "id": 2,
+      "name": "냉장고",
+      "images": "https://github.com/tanonkim/yhim/blob/master/2.png?raw=true"
+    },
+    {
+      "id": 3,
+      "name": "TV",
+      "images": "https://github.com/tanonkim/yhim/blob/master/3.png?raw=true"
+    },
+    {
+      "id": 4,
+      "name": "TV",
+      "images": "https://github.com/tanonkim/yhim/blob/master/3.png?raw=true"
+    },
+    {
+      "id": 5,
+      "name": "TV",
+      "images": "https://github.com/tanonkim/yhim/blob/master/3.png?raw=true"
+    },
+    {
+      "id": 6,
+      "name": "TV",
+      "images": "https://github.com/tanonkim/yhim/blob/master/3.png?raw=true"
+    }
+  ]
+}
