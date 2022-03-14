@@ -1,0 +1,47 @@
+{
+  "message": "SUCCESS",
+  "result": {
+    "reviews_number": 6,
+    "star_rating": 3.67,
+    "accuracy": 5.0,
+    "communication": 4.0,
+    "cleanliness": 5.0,
+    "location": 4.0,
+    "check_in_rating": 2.0,
+    "cost_performance": 2.0,
+    "reviews": [
+      {
+        "review_id": 7,
+        "nickname": "진",
+        "profile_image": "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/headshot-photography/desktop/headshots_P2b_438x450.jpg.img.jpg",
+        "contents": "내용",
+        "date": "22년 3월",
+        "review_image": []
+      },
+      {
+        "review_id": 8,
+        "nickname": "철진",
+        "profile_image": "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/headshot-photography/desktop/headshots_P2b_438x450.jpg.img.jpg",
+        "contents": "내용",
+        "date": "22년 3월",
+        "review_image": []
+      },
+      {
+        "review_id": 9,
+        "nickname": "남진",
+        "profile_image": "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/headshot-photography/desktop/headshots_P2b_438x450.jpg.img.jpg",
+        "contents": "내용",
+        "date": "22년 3월",
+        "review_image": []
+      },
+      {
+        "review_id": 10,
+        "nickname": "유해진",
+        "profile_image": "https://www.adobe.com/content/dam/cc/us/en/creative-cloud/photography/discover/headshot-photography/desktop/headshots_P2b_438x450.jpg.img.jpg",
+        "contents": "내용",
+        "date": "22년 3월",
+        "review_image": []
+      }
+    ]
+  }
+}

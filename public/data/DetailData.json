@@ -1,0 +1,56 @@
+{
+  "message": {
+    "name": "상민이네",
+    "description": "상민이네 집입니다. 안녕하세요.",
+    "district": "강남구",
+    "neighberhood": "도곡동",
+    "price": 30000.0,
+    "address": "강남구 도곡동",
+    "guests": 3,
+    "beds": 3,
+    "bedrooms": 2,
+    "baths": 2,
+    "latitute": 37.4898,
+    "longitute": 127.0438,
+    "host": "맹구",
+    "host_image": "https://github.com/tanonkim/yhim/blob/master/profile_image/5.jpg?raw=true",
+    "category": "호텔 객실",
+    "room_images_url": [
+      "https://github.com/tanonkim/yhim/blob/master/31.png?raw=true",
+      "https://github.com/tanonkim/yhim/blob/master/32.png?raw=true",
+      "https://github.com/tanonkim/yhim/blob/master/33.png?raw=true",
+      "https://github.com/tanonkim/yhim/blob/master/34.png?raw=true",
+      "https://github.com/tanonkim/yhim/blob/master/35.png?raw=true"
+    ],
+    "check_in": ["2022-03-27"],
+    "room_amenities": [
+      {
+        "amenity_id": 37,
+        "amenity_name": "침구",
+        "amenity_icon_url": "https://github.com/tanonkim/yhim/blob/master/33.png?raw=true"
+      },
+      {
+        "amenity_id": 38,
+        "amenity_name": "TV",
+        "amenity_icon_url": "https://github.com/tanonkim/yhim/blob/master/33.png?raw=true"
+      },
+      {
+        "amenity_id": 39,
+        "amenity_name": "에어컨",
+        "amenity_icon_url": "https://github.com/tanonkim/yhim/blob/master/33.png?raw=true"
+      }
+    ],
+    "check_in_time": "10:00",
+    "check_out_time": "15:00",
+    "house_rules": [
+      {
+        "room_rules": "반려동물 동반 가능",
+        "rules_icon_url": "https://cdn-icons-png.flaticon.com/512/489/489868.png"
+      },
+      {
+        "room_rules": "근처에 호수, 강, 바다 등이 있음",
+        "rules_icon_url": "https://cdn-icons.flaticon.com/png/512/691/premium/691130.png?token=exp=1647482091~hmac=38b3eab113b1902a527c1248bb3fa24f"
+      }
+    ]
+  }
+}
