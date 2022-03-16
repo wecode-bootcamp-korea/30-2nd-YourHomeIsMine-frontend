@@ -1,0 +1,189 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  font-family: 'Noto Sans KR Black';
+  color: white;
+  background-color: #222222;
+
+  .logo {
+    padding-left: 50px;
+    width: 80px;
+
+    h2 {
+      position: absolute;
+      width: 80px;
+      margin-left: 130px;
+    }
+  }
+
+  .navBar {
+    display: flex;
+    align-items: center;
+
+    .location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 180px;
+
+      .locationWrapper {
+        text-align: center;
+        font-size: 10px;
+        color: black;
+        text-align: center;
+
+        .locationInner {
+          height: 50px;
+          margin-top: 10px;
+          padding-left: 30px;
+          background-color: white;
+          border: 1px solid white;
+          border-radius: 100px 0 0 100px;
+
+          .locator {
+            margin-top: 10px;
+
+            .locatorWrapper {
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+
+              .locatorInput {
+                width: 150px;
+                font-family: 'Noto Sans KR Black';
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .checkIn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin-top: 10px;
+      padding: 0 20px 0 20px;
+      background-color: white;
+      font-size: 10px;
+      color: black;
+
+      .checkInWrapper {
+        text-align: center;
+        font-size: 10px;
+        color: black;
+        text-align: left;
+        border: none;
+
+        .checkInInput {
+          width: 150px;
+          font-family: 'Noto Sans KR Black';
+          border: none;
+        }
+      }
+    }
+
+    .checkOut {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin-top: 10px;
+      padding: 0 20px 0 20px;
+      background-color: white;
+      font-size: 10px;
+      color: black;
+
+      .checkOutWrapper {
+        text-align: center;
+        font-size: 10px;
+        color: black;
+        text-align: left;
+        border: none;
+
+        .checkOutInput {
+          width: 150px;
+          font-family: 'Noto Sans KR Black';
+          border: none;
+        }
+      }
+    }
+
+    .guest {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 80px;
+
+      .guestWrapper {
+        text-align: center;
+        font-size: 10px;
+        color: black;
+        text-align: center;
+
+        .guestInner {
+          height: 50px;
+          margin-top: 10px;
+          padding-right: 30px;
+          background-color: white;
+          border: 1px solid white;
+          border-radius: 0 100px 100px 0;
+
+          .addGuests {
+            margin-top: 10px;
+
+            .addGuestsWrapper {
+              display: flex;
+              flex-direction: column;
+              padding: 0 20px;
+              text-align: left;
+
+              .addGuestsInput {
+                width: 150px;
+                font-family: 'Noto Sans KR Black';
+                border: none;
+              }
+            }
+          }
+        }
+
+        .search {
+          position: relative;
+          padding: 0 30px 60px 0;
+
+          .searchBtn {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            margin: -33px 0 0 100px;
+            border-radius: 35px;
+            background-color: #ff385c;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .kakaoLoginBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto Sans KR Black';
+    background-color: white;
+    border: none;
+
+    .kakaoLoginBtnWrapper {
+      display: flex;
+    }
+  }
+}
