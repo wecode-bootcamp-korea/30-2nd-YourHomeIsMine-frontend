@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.login {
+  display: flex;
+  position: relative;
+  background-color: #222222;
+  width: 100%;
+  padding-left: 900px;
+  font-family: 'Noto Sans KR Black';
+
+  .loginWrapper {
+    width: 200px;
+    padding: 2px 0 0 10px;
+    border-radius: 30px;
+    background-color: gray;
+
+    .loginInput {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      width: 180px;
+      height: 50px;
+      margin-top: 5px;
+      border-radius: 30px;
+      background-color: white;
+      opacity: 30%;
+    }
+
+    span {
+      color: white;
+    }
+  }
+
+  .kakaoLogin {
+    display: flex;
+    width: 50px;
+    height: 180px;
+
+    img {
+      width: 300px;
+    }
+
+    a {
+      width: 100px;
+      margin-top: 30px;
+      padding-left: 30px;
+    }
+  }
+}
