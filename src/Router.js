@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login/Login';
+import Login from './pages/Login/KakaoLogin';
 import Main from './pages/Main/Main';
 import Detail from './pages/Detail/Detail';
 import List from './pages/List/List';

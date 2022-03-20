@@ -6,7 +6,7 @@ function Nav() {
   const navigate = useNavigate();
 
   function goToMain() {
-    navigate('/main');
+    navigate('/');
   }
 
   return (
