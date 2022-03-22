@@ -1,50 +1,30 @@
 @import '../../styles/variables.scss';
 
-.login {
-  display: flex;
-  position: relative;
-  background-color: #222222;
-  width: 100%;
-  padding-left: 900px;
-  font-family: 'Noto Sans KR Black';
-
-  .loginWrapper {
-    width: 200px;
-    padding: 2px 0 0 10px;
-    border-radius: 30px;
-    background-color: gray;
-
-    .loginInput {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: stretch;
-      width: 180px;
-      height: 50px;
-      margin-top: 5px;
-      border-radius: 30px;
-      background-color: white;
-      opacity: 30%;
-    }
-
-    span {
-      color: white;
-    }
-  }
+.kakao {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  top: 60px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  color: black;
+  font-family: 'Noto Sans KR';
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
 
   .kakaoLogin {
     display: flex;
-    width: 50px;
-    height: 180px;
 
-    img {
-      width: 300px;
+    .loginBtn {
+      width: 85%;
     }
 
-    a {
-      width: 100px;
-      margin-top: 30px;
-      padding-left: 30px;
+    .closeBtn {
+      border: none;
+      margin-left: 20px;
+      cursor: pointer;
     }
   }
 }

@@ -1,5 +1,7 @@
 import React from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import KaKaoLogin from '../../pages/Login/KakaoLogin';
 import './Nav.scss';
 
 function Nav() {
@@ -8,12 +10,16 @@ function Nav() {
   function goToMain() {
     navigate('/');
   }
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
   return (
     <nav className="nav">
-      <div className="logo">
-        <h2>네집내집</h2>
-      </div>
+      <img
+        className="logo"
+        alt="logo"
+        src="./images/logo.png"
+        onClick={goToMain}
+      />
       <div className="navBar">
         <div className="location">
           <div className="locationWrapper">
@@ -27,12 +33,6 @@ function Nav() {
                     placeholder="어디로 여행가세요?"
                     name="name"
                   />
-                  <button className="locatorFlexibleBigBtn">
-                    언제 어디로든 떠나는 여행
-                    <button className="locatorFlexibleSmallBtn">
-                      유연한 검색
-                    </button>
-                  </button>
                 </div>
               </div>
             </div>
@@ -79,6 +79,11 @@ function Nav() {
                 </div>
               </div>
               <div className="search">
+                <img
+                  className="searchbar"
+                  alt="search"
+                  src="./images/search.png"
+                />
                 <button
                   className="searchBtn"
                   type="button"
@@ -88,17 +93,17 @@ function Nav() {
             </div>
           </div>
         </div>
-        <div className="kakaoLoginBtn">
-          <div className="kakaoLoginBtnWrapper" />
-          <input
-            className="kakaoLoginBtn"
-            type="button"
-            id="name"
-            placeholder="검색"
-            value="🏠"
-            onClick={goToMain}
-          />
-        </div>
+      </div>
+      <div className="kakaoLoginBtn">
+        <input
+          className="kakaoLoginBtn"
+          type="button"
+          id="name"
+          placeholder="검색"
+          value="🏠"
+          onClick={() => setIsOpenModal(true)}
+        />
+        {isOpenModal && <KaKaoLogin setIsOpenModal={setIsOpenModal} />}
       </div>
     </nav>
   );
