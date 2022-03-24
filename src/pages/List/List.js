@@ -8,6 +8,7 @@ import Category from './Category';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import API_CONFIG from '../../config';
 
 function List() {
   const navigate = useNavigate();
@@ -23,11 +24,6 @@ function List() {
     query_for_guestNumber: '',
     query_for_day: '',
   });
-  // const queryData = {
-  //   query_for_category: '',
-  //   query_for_guestNumber: '',
-  //   query_for_day: '',
-  // };
 
   const maxGuestNumber = 16;
   const minGuestNumber = 1;
@@ -104,15 +100,13 @@ function List() {
   const BASE_URL = 'https://a937-211-106-114-186.ngrok.io/rooms';
 
   const handleClick = id => {
-    navigate(`/product/${id}`);
+    navigate(`/rooms/${id}`);
   };
 
   useEffect(() => {
-    // fetch(`/data/data.json${location.search}`)
     fetch(`${BASE_URL}${location.search}`)
       .then(res => res.json())
       .then(data => setProductList(data.results));
-    // .then(data => console.log(data.result));
   }, [location.search, queryData]);
   return (
     <ListContainer>
@@ -171,14 +165,16 @@ function List() {
                 return (
                   <Card
                     key={product.id}
+                    id={product.room_id}
                     room_name={product.room_name}
                     images={product.images}
                     price={product.price}
                     address={product.address}
                     category={product.category_name}
                     guest={product.guest}
+                    schedule={product.schedule}
                     schedule_date={product.schedule_date}
-                    onClick={() => handleClick(product.id)}
+                    handleClick={handleClick}
                   />
                 );
               })}

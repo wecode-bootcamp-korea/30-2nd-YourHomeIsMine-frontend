@@ -1,9 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Card({ room_name, price, address, images, category, guest }) {
+function Card({
+  room_name,
+  price,
+  address,
+  images,
+  category,
+  guest,
+  id,
+  handleClick,
+  schedule,
+}) {
   return (
-    <HouseInner>
+    <HouseInner onClick={() => handleClick(id)}>
       <HouseImage src={images} />
       <HouseContentWrapTop>
         <HouseName>{room_name}</HouseName>
@@ -12,7 +22,7 @@ function Card({ room_name, price, address, images, category, guest }) {
       <HouseContentWrapBottom>
         <Address>{address}</Address>
         <Period>{category}</Period>
-        <Guest>{guest}</Guest>
+        <Schedule>{schedule}</Schedule>
       </HouseContentWrapBottom>
     </HouseInner>
   );
@@ -69,7 +79,7 @@ const Period = styled.div`
   padding: 0;
 `;
 
-const Guest = styled.div`
+const Schedule = styled.div`
   margin: 0;
   padding: 0;
 `;

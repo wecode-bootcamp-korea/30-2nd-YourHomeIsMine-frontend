@@ -19,12 +19,12 @@ function Detail() {
   //server url => 'https://a937-211-106-114-186.ngrok.io/rooms/1'
   // `https://a937-211-106-114-186.ngrok.io/rooms/${params.id}`
   useEffect(() => {
-    fetch('https://a937-211-106-114-186.ngrok.io/rooms/1')
+    fetch(`https://a937-211-106-114-186.ngrok.io/rooms/${params.id}`)
       .then(res => res.json())
       .then(data => {
         setDetailList(data.message);
       });
-  }, []);
+  }, [params.id]);
 
   const {
     latitute,
@@ -82,12 +82,12 @@ function Detail() {
   //server url => 'https://e965-211-106-114-186.ngrok.io/rooms/1/reviews'
   // `https://35a8-211-106-114-186.ngrok.io/rooms/${params.id}/reviews`
   useEffect(() => {
-    fetch('https://6c91-211-106-114-186.ngrok.io/rooms/1/reviews')
+    fetch(`https://6c91-211-106-114-186.ngrok.io/rooms/${params.id}/reviews`)
       .then(res => res.json())
       .then(data => {
         setReviewPoint(data.result);
       });
-  }, []);
+  }, [params.id]);
 
   const {
     reviews_number,
