@@ -1,0 +1,154 @@
+{
+  "results": [
+    {
+      "room_name": "은지네",
+      "price": 15000,
+      "period": "test",
+      "category": "집 전체",
+      "latitude": 37.4999,
+      "longitude": 37.4999,
+      "address": "강남구 역삼동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/1.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/2.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/3.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/4.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "기현이네",
+      "price": 23000,
+      "period": "test",
+      "category": "집 전체",
+      "latitude": 37.5602,
+      "longitude": 127.0815,
+      "address": "광진구 중곡2동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/5.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/6.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/7.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/8.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "명국이네",
+      "price": 45000,
+      "period": "test",
+      "category": "집 전체",
+      "latitude": 37.5148,
+      "longitude": 127.0143,
+      "address": "서초구 잠원동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/9.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/10.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/11.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/12.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "수인이네",
+      "price": 30000,
+      "period": "test",
+      "category": "개인실",
+      "latitude": 37.6103,
+      "longitude": 127.0961,
+      "address": "중랑구 신내동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/13.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/14.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/15.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/16.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "윤숙이네",
+      "price": 200000,
+      "period": "test",
+      "category": "호텔 객실",
+      "latitude": 37.5855,
+      "longitude": 126.949,
+      "address": "서대문구 홍제동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/17.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/18.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/19.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/20.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "은지네",
+      "price": 15000,
+      "period": "test",
+      "category": "집 전체",
+      "latitude": 37.4999,
+      "longitude": 37.4999,
+      "address": "강남구 역삼동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/21.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/22.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/23.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/24.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "기현이네",
+      "price": 23000,
+      "period": "test",
+      "category": "집 전체",
+      "latitude": 37.5602,
+      "longitude": 127.0815,
+      "address": "광진구 중곡2동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/25.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/26.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/27.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/28.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "명국이네",
+      "price": 45000,
+      "period": "test",
+      "category": "집 전체",
+      "latitude": 37.5148,
+      "longitude": 127.0143,
+      "address": "서초구 잠원동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/29.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/30.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/31.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/32.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "수인이네",
+      "price": 30000,
+      "period": "test",
+      "category": "개인실",
+      "latitude": 37.6103,
+      "longitude": 127.0961,
+      "address": "중랑구 신내동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/33.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/34.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/35.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/36.png?raw=true"
+      ]
+    },
+    {
+      "room_name": "윤숙이네",
+      "price": 200000,
+      "period": "test",
+      "category": "호텔 객실",
+      "latitude": 37.5855,
+      "longitude": 126.949,
+      "address": "서대문구 홍제동",
+      "images": [
+        "https://github.com/tanonkim/yhim/blob/master/37.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/38.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/39.png?raw=true",
+        "https://github.com/tanonkim/yhim/blob/master/40.png?raw=true"
+      ]
+    }
+  ]
+}
