@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Date from './Date';
 import { MdClose } from 'react-icons/md';
-
 function DateModal({
   className,
   onClose,
@@ -71,6 +70,7 @@ const ModalWrapper = styled.div`
   z-index: 1000;
   overflow: auto;
   outline: 0;
+  font-family: sans-serif;
 `;
 
 const ModalOverlay = styled.div`
