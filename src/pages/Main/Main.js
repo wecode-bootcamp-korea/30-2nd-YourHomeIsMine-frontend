@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router';
 import './Main.scss';
 import styled from 'styled-components';
 
 function Main() {
   const [city, setCity] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     fetch('http://localhost:3000/data/MainContent.json')
       .then(res => res.json())
       .then(data => setCity(data));
   }, []);
+
+  function goToList() {
+    navigate('/list');
+  }
 
   return (
     <MainContainer>
@@ -20,6 +25,7 @@ function Main() {
           <br />
           네집내집에서 즐거운 시간 보내세요!
         </Comment>
+        <RoundBtn onClick={goToList}>집 보러가기</RoundBtn>
       </MainContent>
       <PictureContent>
         <Comment>
@@ -30,14 +36,15 @@ function Main() {
       </PictureContent>
       <SubTitle>설레, 니네집 갈 생각에</SubTitle>
       <CardContainer>
-        {city.map(item => {
-          const { name, id, url } = item;
-          return (
-            <CityCard key={id} url={url}>
-              <CardContent>{name}</CardContent>
-            </CityCard>
-          );
-        })}
+        {city &&
+          city.map(item => {
+            const { name, id, url } = item;
+            return (
+              <CityCard key={id} url={url}>
+                <CardContent>{name}</CardContent>
+              </CityCard>
+            );
+          })}
       </CardContainer>
       <MainContent>
         <Comment>
@@ -52,22 +59,19 @@ export default Main;
 
 const MainContainer = styled.div`
   padding: 0 80px;
-  height: 85vh;
-  background-color: black;
 `;
 
 const MainContent = styled.div`
-  margin-top: 100px;
+  margin: 50px 0;
   padding: 20px;
   text-align: center;
-  margin: 0 auto;
   background-color: #fe385c;
   border-radius: 18px;
 `;
 
 const Comment = styled.h2`
   margin: 0;
-  padding: 100px;
+  padding: 100px 0 80px;
   font-family: 'Noto Sans KR';
   font-weight: 600;
   font-size: 38px;
@@ -108,4 +112,22 @@ const CardContent = styled.h2`
   font-size: 32px;
   font-weight: 500;
   color: white;
+`;
+
+const RoundBtn = styled.button`
+  border: 2px solid white;
+  background: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  &:hover {
+    background: white;
+    color: #fe385c;
+    transition: 0.5s all;
+  }
 `;

@@ -32,9 +32,10 @@ function Footer() {
 
 const FooterContainer = styled.div`
   display: flex;
-  padding: 40px 100px;
+  padding: 35px 100px;
   border-top: 1px solid rgb(240, 240, 240);
   background: black;
+  bottom: 0;
 `;
 
 const LeftFooterBox = styled.div`

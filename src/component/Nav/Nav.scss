@@ -5,12 +5,12 @@
   align-items: center;
   position: relative;
   margin: 0 auto;
-  padding: 0 600px;
-
+  padding: 0 100px;
+  justify-content: space-between;
   height: 100px;
   font-family: 'Noto Sans KR Black';
   color: white;
-  background-color: black;
+  box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
   border-bottom: 1px solid rgb(221, 221, 221);
 
   .logo {
@@ -20,9 +20,11 @@
 
   .navBar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
 
     .location {
       display: flex;
@@ -185,8 +187,8 @@
     position: relative;
     font-size: 20px;
     font-family: 'Noto Sans KR Black';
-    background-color: white;
-    border: none;
+    border: 1px solid #eeeeee;
     cursor: pointer;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 16px;
   }
 }

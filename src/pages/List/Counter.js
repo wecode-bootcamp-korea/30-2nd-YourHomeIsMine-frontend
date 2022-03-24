@@ -23,7 +23,6 @@ export default function Counter({
       </Content>
       <ButtonBox>
         <CancleButton onClick={() => cancleGuestNumber(`guest=1`)}>
-          {/* <CancleButton onClick={() => updateGuestNumber(`guest=1`)}> */}
           지우기
         </CancleButton>
         <ConfirmButton

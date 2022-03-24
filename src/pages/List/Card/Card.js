@@ -41,7 +41,7 @@ const HouseInner = styled.li`
 const HouseImage = styled.img`
   width: 280px;
   height: 280px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px;
   object-fit: cover;
 `;
 
@@ -51,6 +51,7 @@ const HouseContentWrapTop = styled.div`
   padding: 8px 0px;
   font-weight: 600;
   font-size: 15px;
+  font-family: 'Noto Sans KR';
 `;
 
 const HouseName = styled.div``;
@@ -67,6 +68,7 @@ const HouseContentWrapBottom = styled.div`
   word-break: keep-all;
   font-size: 15px;
   color: gray;
+  font-family: 'Noto Sans KR';
 `;
 
 const Address = styled.div`

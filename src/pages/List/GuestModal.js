@@ -88,7 +88,7 @@ const ModalInner = styled.div`
   width: 440px;
   height: 250px;
   max-width: 480px;
-  top: 9%;
+  top: 18%;
   transform: translateY(40%);
   transform: translateX(118%);
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import Card from './Card/Card';
 import GuestModal from './GuestModal';
 import DateModal from './DateModal';
@@ -8,7 +8,7 @@ import Category from './Category';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import API_CONFIG from '../../config';
+// import API_CONFIG from '../../config';
 
 function List() {
   const navigate = useNavigate();
@@ -20,9 +20,9 @@ function List() {
   const [GuestModalVisible, setGuestModalVisible] = useState(false);
   const [DateModalVisible, setDateModalVisible] = useState(false);
   const [queryData, setQueryData] = useState({
-    query_for_category: '',
-    query_for_guestNumber: '',
-    query_for_day: '',
+    categoryQuery: '',
+    guestNumberQuery: '',
+    dayQuery: '',
   });
 
   const maxGuestNumber = 16;
@@ -67,35 +67,37 @@ function List() {
   };
 
   const updateCategory = category => {
-    const new_query = queryData;
-    new_query.query_for_category = category;
-    updateQuery(new_query);
+    const newQuery = queryData;
+    newQuery.categoryQuery = category;
+    updateQuery(newQuery);
   };
 
   const updateGuestNumber = guest => {
-    const new_query = queryData;
-    new_query.query_for_guestNumber = guest;
-    updateQuery(new_query);
+    console.log(guest);
+    const newQuery = queryData;
+    newQuery.guestNumberQuery = guest;
+    updateQuery(newQuery);
   };
 
   const cancleGuestNumber = guest => {
-    const new_query = queryData;
-    new_query.query_for_guestNumber = guest;
+    const newQuery = queryData;
+    newQuery.guestNumberQuery = guest;
     setGuestNumber(1);
-    updateQuery(new_query);
+    updateQuery(newQuery);
   };
 
   const updateDay = day => {
-    const new_query = queryData;
-    new_query.query_for_day = day;
-    updateQuery(new_query);
+    const newQuery = queryData;
+    newQuery.dayQuery = day;
+    updateQuery(newQuery);
   };
 
-  const updateQuery = new_query => {
+  const updateQuery = newQuery => {
     navigate(
-      `?${new_query.query_for_category}&${new_query.query_for_guestNumber}&${new_query.query_for_day}`
+      `?${newQuery.categoryQuery}&${newQuery.guestNumberQuery}&${newQuery.dayQuery}`
     );
   };
+
   // const BASE_URL = 'http://10.58.0.174:8000/rooms';
   const BASE_URL = 'https://a937-211-106-114-186.ngrok.io/rooms';
 
@@ -186,7 +188,9 @@ function List() {
   );
 }
 
-const ListContainer = styled.div``;
+const ListContainer = styled.div`
+  margin-bottom: 400px;
+`;
 
 const InnerWrap = styled.div`
   padding: 0;
@@ -225,6 +229,7 @@ const FilterButton = styled.button`
   cursor: pointer;
   border-radius: 30px;
   border: 1px solid rgb(220, 220, 220);
+  font-family: 'Noto Sans KR';
 
   :hover {
     border: 2px solid black;

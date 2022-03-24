@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import time from './time.png';
 
 function Rules({ house_rules }) {
   return (
