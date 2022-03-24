@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import { API } from '../../config';
+import star from './star.png';
 
 function StarReview(props) {
   const { size } = props;
@@ -8,7 +10,7 @@ function StarReview(props) {
   const params = useParams();
 
   useEffect(() => {
-    fetch(`https://6c91-211-106-114-186.ngrok.io/rooms/${params.id}/reviews`)
+    fetch(`${API.Detail}${params.id}/reviews`)
       .then(res => res.json())
       .then(data => {
         setReviewCount(data.result);
@@ -19,7 +21,7 @@ function StarReview(props) {
 
   return (
     <Evaluation>
-      <Star size={size} src="./images/star.png" />
+      <Star size={size} src={star} />
       <TotalScore size={size}>{star_rating} ·</TotalScore>
       <ReviewCount size={size}>후기 {reviews_number}개</ReviewCount>
     </Evaluation>
