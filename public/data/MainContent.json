@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "동작구",
+    "url": "https://images.unsplash.com/photo-1564979265731-7649826398a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1266&q=80"
+  },
+  {
+    "id": 2,
+    "name": "성북구",
+    "url": "https://images.unsplash.com/photo-1538485399081-7191377e8241?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=674&q=80"
+  },
+  {
+    "id": 3,
+    "name": "서초구",
+    "url": "https://images.unsplash.com/photo-1554040305-68021c3fc4f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+  },
+  {
+    "id": 4,
+    "name": "마포구",
+    "url": "https://images.unsplash.com/photo-1532085755448-a67fd3b518b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
+  }
+]
