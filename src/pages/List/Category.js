@@ -31,6 +31,7 @@ const NavButtonBox = styled.ul`
   justify-content: space-between;
   font-size: 14px;
   padding: 20px;
+  font-family: 'Noto Sans KR';
 `;
 
 const HouseTypeButtonBox = styled.li``;

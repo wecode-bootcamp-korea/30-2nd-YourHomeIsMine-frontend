@@ -3,23 +3,21 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import KaKaoLogin from '../../pages/Login/KakaoLogin';
 import './Nav.scss';
+import logo from './logo.png';
+import search from './search.png';
 
 function Nav() {
   const navigate = useNavigate();
 
   function goToMain() {
-    navigate('/');
+    navigate('/main');
   }
+
   const [isOpenModal, setIsOpenModal] = useState(false);
 
   return (
     <nav className="nav">
-      <img
-        className="logo"
-        alt="logo"
-        src="./images/logo.png"
-        onClick={goToMain}
-      />
+      <img className="logo" alt="logo" src={logo} onClick={goToMain} />
       <div className="navBar">
         <div className="location">
           <div className="locationWrapper">
@@ -79,11 +77,7 @@ function Nav() {
                 </div>
               </div>
               <div className="search">
-                <img
-                  className="searchbar"
-                  alt="search"
-                  src="./images/search.png"
-                />
+                <img className="searchbar" alt="search" src={search} />
                 <button
                   className="searchBtn"
                   type="button"

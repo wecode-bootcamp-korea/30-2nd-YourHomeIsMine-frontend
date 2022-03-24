@@ -8,6 +8,13 @@ import Rules from './Rules';
 import 'react-dates/lib/css/_datepicker.css';
 import styled from 'styled-components';
 import theme from '../../styles/theme';
+import { API } from '../../config';
+import medal from './medal.png';
+import love from './love.png';
+import calendar from './calendar.png';
+import send from './send.png';
+import selfCheck from './selfCheck.png';
+import time from './time.png';
 
 function Detail() {
   const [detailList, setDetailList] = useState({});
@@ -15,11 +22,8 @@ function Detail() {
   const [freeCancel, setFreeCancel] = useState('체크인 기준 5');
   const params = useParams();
 
-  //mock data => 'http://localhost:3000/data/DetailData.json'
-  //server url => 'https://a937-211-106-114-186.ngrok.io/rooms/1'
-  // `https://a937-211-106-114-186.ngrok.io/rooms/${params.id}`
   useEffect(() => {
-    fetch(`https://a937-211-106-114-186.ngrok.io/rooms/${params.id}`)
+    fetch(`${API.Detail}${params.id}`)
       .then(res => res.json())
       .then(data => {
         setDetailList(data.message);
@@ -82,7 +86,7 @@ function Detail() {
   //server url => 'https://e965-211-106-114-186.ngrok.io/rooms/1/reviews'
   // `https://35a8-211-106-114-186.ngrok.io/rooms/${params.id}/reviews`
   useEffect(() => {
-    fetch(`https://6c91-211-106-114-186.ngrok.io/rooms/${params.id}/reviews`)
+    fetch(`${API.Detail}${params.id}/reviews`)
       .then(res => res.json())
       .then(data => {
         setReviewPoint(data.result);
@@ -115,17 +119,18 @@ function Detail() {
               <HouseSubInfo>
                 <ul>
                   <StarReview />
-                  <Icon size="mini" src="./images/medal.png" />
+                  <Icon size="mini" src={medal} />
+                  {/* <Icon src={require('./medal.png')} /> */}
                   <li>슈퍼호스트</li>
                   <li>{address}</li>
                 </ul>
                 <ShareBox>
                   <ShareSaveButton>
-                    <img alt="공유" src="./images/send.png" />
+                    <img alt="공유" src={send} />
                     <span>공유하기</span>
                   </ShareSaveButton>
                   <ShareSaveButton>
-                    <img alt="저장" src="./images/love.png" />
+                    <img alt="저장" src={love} />
                     <span>저장</span>
                   </ShareSaveButton>
                 </ShareBox>
@@ -171,16 +176,17 @@ function Detail() {
                 </HouseIntro>
                 <HouseIntroIconText>
                   <HouseIconText>
-                    <Icon alt="selfCheckin" src="./images/enter.png" />
+                    <Icon alt="selfCheckin" src={selfCheck} />
                     <Text>셀프체크인</Text>
                   </HouseIconText>
 
                   <HouseIconText>
-                    <Icon alt="selfCheckin" src="./images/medal.png" />
+                    {/* <Icon alt="selfCheckin" src="./images/medal.png" /> */}
+                    <Icon alt="selfCheckin" src={medal} />
                     <Text>{host}님은 슈퍼 호스트입니다.</Text>
                   </HouseIconText>
                   <HouseIconText>
-                    <Icon alt="selfCheckin" src="./images/calendar.png" />
+                    <Icon alt="selfCheckin" src={calendar} />
                     <Text>
                       {freeCancel}일 전까지 무료로 취소하실 수 있습니다.
                     </Text>
@@ -298,11 +304,11 @@ function Detail() {
               <h3>숙소 이용규칙</h3>
               <RuleBox>
                 <CheckTime>
-                  <img alt="time" src="./images/time.png" />
+                  <img alt="time" src={time} />
                   <p>체크인: 오전 {check_in_time}</p>
                 </CheckTime>
                 <CheckTime>
-                  <img alt="time" src="./images/time.png" />
+                  <img alt="time" src={time} />
                   <p>체크아웃: 오전 {check_out_time}</p>
                 </CheckTime>
                 <Rules house_rules={house_rules} />

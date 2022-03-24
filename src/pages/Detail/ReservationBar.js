@@ -3,6 +3,7 @@ import StarReview from './StarReview';
 import Modal from './Modal';
 import styled from 'styled-components';
 import theme from '../../styles/theme';
+import medal from './medal.png';
 
 function ReservationBar({ price, host, takeStartDate }) {
   const [openModal, setOpenModal] = useState(false);
@@ -90,7 +91,7 @@ function ReservationBar({ price, host, takeStartDate }) {
           에어비앤비 숙소는 보통 예약이 가득 차 <br />
           있습니다.
         </div>
-        <img alt="superHost" src="./images/medal.png" />
+        <img alt="superHost" src={medal} />
       </RecommentBar>
     </>
   );

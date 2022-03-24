@@ -70,7 +70,6 @@ const ModalWrapper = styled.div`
   z-index: 1000;
   overflow: auto;
   outline: 0;
-  font-family: sans-serif;
 `;
 
 const ModalOverlay = styled.div`
@@ -93,8 +92,8 @@ const ModalInner = styled.div`
   width: 420px;
   height: 340px;
   max-width: 480px;
-  top: 9%;
-  transform: translateY(40%);
+  top: 18%;
+  transform: translateY(90%);
   transform: translateX(100%);
   margin: 0 auto;
   padding: 10px 10px;
