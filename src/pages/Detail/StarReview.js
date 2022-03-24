@@ -8,12 +8,12 @@ function StarReview(props) {
   const params = useParams();
 
   useEffect(() => {
-    fetch('https://6c91-211-106-114-186.ngrok.io/rooms/1/reviews')
+    fetch(`https://6c91-211-106-114-186.ngrok.io/rooms/${params.id}/reviews`)
       .then(res => res.json())
       .then(data => {
         setReviewCount(data.result);
       });
-  }, []);
+  }, [params.id]);
 
   const { reviews_number, star_rating } = reviewCount;
 

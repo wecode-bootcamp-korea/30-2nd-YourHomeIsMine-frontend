@@ -1,0 +1,39 @@
+{
+  "houseList": [
+    {
+      "id": 0,
+      "houseType": "전체",
+      "value": ""
+    },
+    {
+      "id": 1,
+      "houseType": "아파트",
+      "value": "category=1"
+    },
+    {
+      "id": 2,
+      "houseType": "오피스텔",
+      "value": "category=2"
+    },
+    {
+      "id": 3,
+      "houseType": "주택",
+      "value": "category=3"
+    },
+    {
+      "id": 4,
+      "houseType": "컨테이너",
+      "value": "category=4"
+    },
+    {
+      "id": 5,
+      "houseType": "한옥",
+      "value": "category=5"
+    },
+    {
+      "id": 6,
+      "houseType": "위어크",
+      "value": "category=6"
+    }
+  ]
+}
