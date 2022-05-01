@@ -104,7 +104,8 @@ function List() {
   };
 
   useEffect(() => {
-    fetch(`${BASE_URL}${location.search}`)
+    // fetch(`${BASE_URL}${location.search}`)
+    fetch('http://localhost:3000/data/data.json')
       .then(res => res.json())
       .then(data => setProductList(data.results));
   }, [location.search, queryData]);
