@@ -97,7 +97,7 @@ function List() {
   };
 
   // const BASE_URL = 'http://10.58.0.174:8000/rooms';
-  const BASE_URL = 'https://a937-211-106-114-186.ngrok.io/rooms';
+  const BASE_URL = 'http://127.0.0.1:8888/rooms';
 
   const handleClick = id => {
     navigate(`/rooms/${id}`);
