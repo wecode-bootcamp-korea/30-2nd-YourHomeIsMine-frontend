@@ -108,7 +108,7 @@ const CityCard = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 23%;
+  width: 23.2%;
   height: 450px;
   padding: 20px;
   margin-bottom: 30px;
